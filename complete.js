@@ -7,14 +7,17 @@ const completeTask = document.getElementById('complete');
 const completed = todo.completed;
 
 completed.map(complete => {
-    console.log(open);
+    // console.log(open);
     const tr = document.createElement('tr');
     completeTask.appendChild(tr);
-    console.log(tr);
-    // const td = document.createElement('td');
-    // tr.appendChild(td);
+    // console.log(tr);
+    const td = document.createElement('td');
+    const del = document.createElement('del');
+    del.innerText = complete;
+    tr.appendChild(td);
+    td.appendChild(del);
     // console.log(td);
-    tr.innerHTML = `
-    <td>${complete}</td>`;
-    console.log(tr.innerHTML);
+    // tr.innerHTML = `
+    // <td>${complete}</td>`;
+    // console.log(tr.innerHTML);
 });

@@ -6,8 +6,40 @@ body {
 
 .heading {
     text-align: center;
-    color: #dc143c;
+    color: #ff5945;
     margin: 20px auto;
+}
+
+#app {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.task{
+    display: flex;
+    text-align: center;
+    width: 90%;
+    margin: 0  auto 25px;
+    border-radius: 30px;
+    background-color: #edf09a;
+}
+
+#task_input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-left: 20px;
+}
+
+#task_add{
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 0 10px 0;
+    background: #ff5945;
+    color: #fff;
+    cursor: pointer;
 }
 
 .toDo{
